@@ -43,7 +43,7 @@ var Blog = mongoose.model('Blog', {
 // Delete
 
 // GET all blogs
-app.get('/', function(req, res) {
+app.get('/blog', function(req, res) {
 	Blog.find({}, function(err, data) {
 		if(err) {
 			console.log(err);
